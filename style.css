@@ -1,0 +1,28 @@
+.image1 {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+  /* flex-wrap: wrap; */
+}
+.image1:nth-child(even) {
+  flex-direction: row-reverse;
+}
+/* .image1-img {
+  flex: 30%;
+} */
+img {
+  width: 250px;
+  height: 250px;
+}
+/* .image1-text {
+  flex: 70%;
+} */
+@media (max-width: 550px) {
+  .image1 {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .image1:nth-child(even) {
+    flex-direction: column;
+  }
+}
